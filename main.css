@@ -1,0 +1,121 @@
+body {
+  background-color: aquamarine;
+  font-size: 20px;
+  display: flex;
+}
+
+.controls {
+  width: 25%;
+}
+
+.gameScreen {
+  width: 75%;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.nullTile {
+  width: 4em;
+  max-width: 4em;
+  height: 6em;
+  max-height: 6em;
+  margin: 0.1em;
+  background-color: blueviolet;
+  border: 2px solid black;
+}
+
+.invisible {
+  background-color: aquamarine;
+  border: 2px solid transparent;
+}
+
+.blankLetter {
+  background-color: white;
+}
+
+.guessnotTurnedLetter {
+  background-color: #eee8aa;
+  animation: highlightGuess 1s;
+}
+
+.guessedLetter {
+  background-color: white;
+  font-size: 5em;
+  width: 0.8em;
+  max-width: 0.8em;
+  height: 1.2em;
+  max-height: 1.2em;
+  margin: 0.02em;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes highlightGuess {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #eee8aa;
+  }
+}
+
+.scoreCardsContainer {
+  padding-top: 3em;
+}
+
+.scoreCard {
+  width: 400px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.playerName {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 400px;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h3.playerName {
+  margin: 0;
+
+  border-radius: 7px 7px 0 0;
+  align-items: center;
+}
+
+h3.pl1 {
+  background-color: yellow;
+}
+
+h3.pl2 {
+  background-color: red;
+}
+
+h3.pl3 {
+  background-color: blue;
+}
+
+.cardBody {
+  height: 100px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0 0 7px 7px;
+}
+
+.playerScore {
+  font-size: 3em;
+}

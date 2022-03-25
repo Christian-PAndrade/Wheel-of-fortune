@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="start.js"></script>
+    </head>
+    <body>
+        <div class="controls">
+            <div class="newWord">
+                <input type="text" id="newWord"/>
+                <button id="newWordBtn">Load New Word</button>
+            </div>
+            <div class="userGuess">
+                <input type="text" id="userInput" maxlength="1"/>
+                <button id="userInputBtn">Check Letter</button>
+            </div>
+            <div>
+                <input type="text" id="userGuessedLetter" maxlength="1"/>
+                <label>Guessed Letter</label>
+            </div>
+            <div>
+                <input type="text" id="userGuessedLetterNumber" maxlength="1"/>
+                <label>Shows how many times</label>
+            </div>
+            <div>
+                <input type="text" id="currentPlayer"/>
+                <label>Current Player</label>
+            </div>
+            <div>
+                <button class="nextPlayer" id="nextPlayer1">Player1</button>
+                <button class="nextPlayer" id="nextPlayer2">Player2</button>
+                <button class="nextPlayer" id="nextPlayer3">Player3</button>
+            </div>
+        </div>
+        <div class="gameScreen">
+            <div class="main_container">
+                <div class="board">
+                    <div class="row">
+                        <div class="nullTile invisible"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile invisible"></div>
+                    </div>
+                    <div class="row">
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                    </div>
+                    <div class="row">
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                    </div>
+                    <div class="row">
+                        <div class="nullTile invisible"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile"></div>
+                        <div class="nullTile invisible"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scoreCardsContainer" style="display: flex; justify-content: space-around;">
+                <div class="scoreCard">
+                    <div class="cardheader">
+                        <h3 class="playerName pl1" id="playerName1">Player 1</h3>
+                    </div>
+                    <div class="cardBody">
+                        <p class="playerScore" id="playerScore1">1500</p>
+                    </div>
+                </div>
+                <div class="scoreCard">
+                    <div class="cardheader">
+                        <h3 class="playerName pl2" id="playerName2">Player 2</h3>
+                    </div>
+                    <div class="cardBody">
+                        <p class="playerScore" id="playerScore2">750</p>
+                    </div>
+                </div>
+                <div class="scoreCard">
+                    <div class="cardheader">
+                        <h3 class="playerName pl3" id="playerName3">Player 3</h3>
+                    </div>
+                    <div class="cardBody" id="playerScore3">
+                        <p class="playerScore" id="playerScore1">2200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>
